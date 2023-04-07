@@ -8,7 +8,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "Scriptslapbattles"
+_G.Key = "Gakvyr63ttdkf841UEGD8487"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
@@ -56,6 +56,18 @@ Tab:AddButton({
          CorrectKeyNotifications()
      else
         WrongKeyNotifications()
+        end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Free Key",
+	Callback = function()
+        
+      	if setclipboard then
+            
+            setclipboard("https://controlc.com/77f5201d")
+            
         end
   	end    
 })
