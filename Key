@@ -1,14 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "KeySystem", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
 	Name = "Your in!",
-	Content = "logged is the name",
+	Content = "The Key System Get Script Slap battles",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
-_G.Key = "Gakvyr63ttdkf841UEGD8487"
+_G.Key = "2036f7cb49f3412fbd50fa28d45635f7"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
@@ -18,7 +18,7 @@ end
 function CorrectKeyNotifications()
     OrionLib:MakeNotification({
         Name = "Correct Key",
-        Content = "Welcome To The LEAN PARTY :D",
+        Content = "Loading The Script...",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -27,7 +27,7 @@ end
 function WrongKeyNotifications()
     OrionLib:MakeNotification({
         Name = " Wrong Key",
-        Content = "Your Not on The List Kid",
+        Content = "Your Check Key Failure",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
@@ -52,6 +52,7 @@ Tab:AddButton({
 	Name = "Check Key",
 	Callback = function()
         if _G.KeyInput == _G.Key then
+         task.wait(4.1)
          MakeScriptHub()
          CorrectKeyNotifications()
      else
@@ -66,7 +67,7 @@ Tab:AddButton({
         
       	if setclipboard then
             
-            setclipboard("https://controlc.com/77f5201d")
+            setclipboard("https://controlc.com/5e96635a")
             
         end
   	end    
